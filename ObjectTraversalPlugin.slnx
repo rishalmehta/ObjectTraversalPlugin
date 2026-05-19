@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="ObjectTraversalPlugin.csproj" Id="8304d9e1-5b95-449c-94b3-6b213bf76305">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>

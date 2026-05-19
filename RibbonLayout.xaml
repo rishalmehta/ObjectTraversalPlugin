@@ -1,0 +1,19 @@
+﻿<RibbonControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <RibbonTab Id="ID_CCTECH_TAB"
+               Title="CCTECH Tools">
+
+        <RibbonPanel Id="ID_MAIN_PANEL"
+                     Title="Utilities">
+
+            <RibbonButton Id="ID_CountObjects"
+                          Size="Large"
+                          ShowText="True" />
+
+        </RibbonPanel>
+
+    </RibbonTab>
+
+</RibbonControl>
