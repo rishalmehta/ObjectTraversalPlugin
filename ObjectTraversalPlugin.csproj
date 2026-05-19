@@ -87,6 +87,15 @@
     <Content Include="Icons\object32.png.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ObjectTraversalPlugin.bundle\Contents\Windows\Icons\object16.png.png" />
+    <Content Include="ObjectTraversalPlugin.bundle\Contents\Windows\Icons\object32.png.png" />
+    <Content Include="ObjectTraversalPlugin.bundle\Contents\Windows\ObjectTraversalPlugin.dll" />
+    <Content Include="ObjectTraversalPlugin.bundle\PackageContents.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ObjectTraversalPlugin.bundle\Contents\Windows\RibbonLayout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

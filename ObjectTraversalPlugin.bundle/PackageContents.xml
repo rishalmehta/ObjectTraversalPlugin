@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ApplicationPackage
+  SchemaVersion="1.0"
+  AutodeskProduct="Navisworks"
+  Name="CCTechTools"
+  AppVersion="1.0.0"
+  ProductType="Application"
+  Author="Rishal">
+
+  <Components>
+
+    <RuntimeRequirements
+      OS="Win64"
+      Platform="NAVMAN"
+      SeriesMin="Nw24"
+      SeriesMax="Nw27" />
+
+    <ComponentEntry
+      AppName="CCTechTools"
+      ModuleName="./Contents/Windows/ObjectTraversalPlugin.dll"
+      AppType="ManagedPlugin" />
+
+  </Components>
+
+</ApplicationPackage>
