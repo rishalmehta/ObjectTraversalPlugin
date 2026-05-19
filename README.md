@@ -4,22 +4,73 @@ This plugin is developed for Autodesk Navisworks using the .NET API and Visual S
 
 Example repository structure:
 
-NavisTraversalPlugin/
+ObjectTraversalPlugin/
 │
-├── NavisTraversalPlugin.sln
-├── NavisTraversalPlugin/
-│   ├── Commands/
-│   ├── Properties/
-│   ├── bin/
-│   ├── obj/
-│   ├── Plugin.cs
-│   └── NavisTraversalPlugin.csproj
+├── Properties/
+├── References/
+├── bin/
+├── obj/
+├── Icons/
 │
-├── Bundle/
-│   └── NavisTraversalPlugin.bundle/
-│       ├── PackageContents.xml
-│       └── Contents/
-│           └── 2026/
-│               └── NavisTraversalPlugin.dll
+├── ObjectTraversalPlugin.bundle/
+│   ├── Contents/
+│   │   └── Windows/
+│   │       ├── Icons/
+│   │       │   ├── object16.png.png
+│   │       │   └── object32.png.png
+│   │       │
+│   │       ├── ObjectTraversalPlugin.dll
+│   │       └── RibbonLayout.xaml
+│   │
+│   └── PackageContents.xml
 │
-└── README.md
+├── .gitattributes
+├── .gitignore
+├── ObjectCounterCommandHandler.cs
+├── ObjectCounterPlugin.cs
+├── README.md
+└── RibbonLayout.xaml
+
+Plugin Setup Steps
+1. Build the Project
+
+Build the solution in Visual Studio.
+
+Generated DLL:
+
+bin/Debug/ObjectTraversalPlugin.dll
+
+2. Copy DLL
+
+Copy the generated DLL into:
+
+ObjectTraversalPlugin.bundle/Contents/Windows/
+
+3. Plugin Bundle
+
+The plugin uses Autodesk Navisworks .bundle structure with:
+
+PackageContents.xml
+Plugin DLL
+RibbonLayout.xaml
+Ribbon Icons
+
+4. Install Plugin in Navisworks
+
+Copy:
+
+ObjectTraversalPlugin.bundle
+
+into Navisworks Plugins folder:
+
+C:\ProgramData\Autodesk\ApplicationPlugins
+
+5. Launch Navisworks
+
+Open Navisworks and the ribbon tab/button will appear.
+
+Plugin Features:
+
+Traverse Objects |
+Count Objects |
+Display Object Statistics
